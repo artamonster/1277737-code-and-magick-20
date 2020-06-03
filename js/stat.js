@@ -44,8 +44,8 @@ window.renderStatistics = function (ctx, players, times) {
     if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgb(255,0,0)';
     } else {
-      var saturation = Math.round(Math.random() * 100);
-      ctx.fillStyle = 'hsl(240,' + saturation + '%, 50%)';
+      var intensity = Math.round(Math.random() * 100);
+      ctx.fillStyle = 'hsl(240,' + intensity + '%, 50%)';
     }
     ctx.fillRect(CLOUD_X + GAP_BAR + (GAP_BAR + BAR_WIDTH) * i, CLOUD_Y + CLOUD_HEIGHT - GAP * 2 - FONT_GAP, BAR_WIDTH, (-BAR_HEIGHT * times[i]) / maxTime);
     ctx.fillStyle = '#000';
